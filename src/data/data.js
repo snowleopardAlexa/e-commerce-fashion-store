@@ -4,6 +4,14 @@ import slider3 from '../img/slider3.jpg';
 import category1 from '../img/category1.jpg';
 import category2 from '../img/category2.jpg';
 import category3 from '../img/category3.jpg';
+import bag1 from '../img/bag1.png';
+import bag2 from '../img/bag2.png';
+import bag3 from '../img/bag3.png';
+import bag4 from '../img/bag4.png';
+import bag5 from '../img/bag5.png';
+import bag6 from '../img/bag6.png';
+import bag7 from '../img/bag7.png';
+import bag8 from '../img/bag8.png';
 
 export const sliderItems = [
     {
@@ -50,34 +58,34 @@ export const sliderItems = [
   export const popularProducts = [
     {
       id:1,
-      img:"https://d3o2e4jr3mxnm3.cloudfront.net/Mens-Jake-Guitar-Vintage-Crusher-Tee_68382_1_lg.png",
+      img: bag1,
     },
     {
       id:2,
-      img:"https://cdn.shopify.com/s/files/1/0101/4832/products/Angela_Natural_Tee.png?v=1606780388",
+      img: bag2,
     },
     {
       id:3,
-      img:"https://www.prada.com/content/dam/pradanux_products/U/UCS/UCS319/1YOTF010O/UCS319_1YOT_F010O_S_182_SLF.png",
+      img: bag3,
     },
     {
       id:4,
-      img:"https://www.burdastyle.com/pub/media/catalog/product/cache/7bd3727382ce0a860b68816435d76e26/107/BUS-PAT-BURTE-1320516/1170x1470_BS_2016_05_132_front.png",
+      img: bag4,
     },
     {
       id:5,
-      img:"https://images.ctfassets.net/5gvckmvm9289/3BlDoZxSSjqAvv1jBJP7TH/65f9a95484117730ace42abf64e89572/Noissue-x-Creatsy-Tote-Bag-Mockup-Bundle-_4_-2.png",
+      img: bag5,
     },
     {
       id:6,
-      img:"https://d3o2e4jr3mxnm3.cloudfront.net/Rocket-Vintage-Chill-Cap_66374_1_lg.png",
+      img: bag6,
     },
     {
       id:7,
-      img:"https://www.vintageindustries.nl/download_front/qympzk1762/2217_Arrow_Jacket_Forest.png",
+      img: bag7,
     },
     {
       id:8,
-      img:"https://www.pngarts.com/files/3/Women-Jacket-PNG-High-Quality-Image.png",
+      img: bag8,
     },
   ]
