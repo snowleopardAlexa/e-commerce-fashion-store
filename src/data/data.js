@@ -4,14 +4,14 @@ import slider3 from '../img/slider3.jpg';
 import category1 from '../img/category1.jpg';
 import category2 from '../img/category2.jpg';
 import category3 from '../img/category3.jpg';
-import bag1 from '../img/bag1.png';
-import bag2 from '../img/bag2.png';
-import bag3 from '../img/bag3.png';
-import bag4 from '../img/bag4.png';
-import bag5 from '../img/bag5.png';
-import bag6 from '../img/bag6.png';
-import bag7 from '../img/bag7.png';
-import bag8 from '../img/bag8.png';
+import bag1 from '../img/bag1.jpg';
+import bag2 from '../img/bag2.jpg';
+import bag3 from '../img/bag3.jpg';
+import bag4 from '../img/bag4.jpg';
+import bag5 from '../img/bag5.jpg';
+import bag6 from '../img/bag6.jpg';
+import bag7 from '../img/bag7.jpg';
+import bag8 from '../img/bag8.jpg';
 
 export const sliderItems = [
     {
