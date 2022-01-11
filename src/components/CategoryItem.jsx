@@ -27,7 +27,7 @@ const Info = styled.div `
 `;
 
 const Title = styled.h1 `
-  color: white;
+  color: black;
   margin-bottom: 20px;
 `;
 

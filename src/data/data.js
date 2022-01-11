@@ -1,7 +1,7 @@
 import slider1 from '../img/slider1.jpg';
 import slider2 from '../img/slider2.jpg';
 import slider3 from '../img/slider3.jpg';
-import dresses from '../img/dresses.jpg';
+import category1 from '../img/category1.jpg';
 import category2 from '../img/category2.jpg';
 import category3 from '../img/category3.jpg';
 
@@ -32,7 +32,7 @@ export const sliderItems = [
   export const categoriesItems = [
     {
       id: 1,
-      img: dresses,
+      img: category1,
       title: "EXTRAORDINARY DRESSES",
     },
     {
