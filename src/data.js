@@ -5,21 +5,21 @@ import sea from './img/sea.jpg';
 export const sliderItems = [
     {
       id: 1,
-      img: {woman},
+      img: woman,
       title: "DEVIL'S SOUL COLLECTION SALE",
       desc: "GET 30% OFF FOR NEW ARRIVAL",
       bg: "f5fafd",
     },
     {
       id: 2,
-      img: {fashion},
+      img: fashion,
       title: "AUTUMN COLLE$CTION",
       desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
       bg: "fcf1ed",
     },
     {
       id: 3,
-      img: {sea},
+      img: sea,
       title: "LOUNGEWEAR LOVE",
       desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
       bg: "fbf0f4",
