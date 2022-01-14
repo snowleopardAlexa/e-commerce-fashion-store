@@ -6,6 +6,8 @@ const Container = styled.div `
   width: 100%;
   height: 100vh;
   display: flex;
+  background-color: #900C3F;
+  position: relative;
 `
 
 const Arrow = styled.div `
@@ -16,15 +18,22 @@ const Arrow = styled.div `
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: ${props => props.direction === "left" && "10px"};
+  right: ${props => props.direction === "right" && "10px"};
+  right: 
+  margin: auto;
 `
 
 const Slider = () => {
     return (
         <Container>
-            <Arrow>
+            <Arrow direction="left">
                 <ArrowLeftOutlined />
             </Arrow>
-            <Arrow>
+            <Arrow direction="right">
                 <ArrowRightOutlined />
             </Arrow>
         </Container>
