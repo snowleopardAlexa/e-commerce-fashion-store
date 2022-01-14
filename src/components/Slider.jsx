@@ -8,6 +8,8 @@ const Container = styled.div `
   height: 100vh;
   display: flex;
   position: relative;
+  position: relative;
+  overflow: hidden;
 `;
 
 const Arrow = styled.div `
@@ -30,7 +32,7 @@ const Arrow = styled.div `
 
 const Wrapper = styled.div `
   height: 100%;
-
+  display: flex;
 `;
 
 const Slide = styled.div `
@@ -86,7 +88,27 @@ const Slider = () => {
                 <ArrowLeftOutlined />
             </Arrow>
             <Wrapper>
-              <Slide>
+              <Slide bg="black">
+               <ImgContainer>
+                   <Image src={women} />
+               </ImgContainer>
+               <InfoContainer>
+                   <Title>DEVIL'S SOUL COLLECTION SALE</Title>
+                   <Desc>GET 30% OFF FOR NEW ARRIVAL</Desc>
+                   <Button>Shop Now</Button>
+               </InfoContainer>
+               </Slide>
+               <Slide bg="yellow">
+               <ImgContainer>
+                   <Image src={women} />
+               </ImgContainer>
+               <InfoContainer>
+                   <Title>DEVIL'S SOUL COLLECTION SALE</Title>
+                   <Desc>GET 30% OFF FOR NEW ARRIVAL</Desc>
+                   <Button>Shop Now</Button>
+               </InfoContainer>
+               </Slide>
+               <Slide bg="pink">
                <ImgContainer>
                    <Image src={women} />
                </ImgContainer>
