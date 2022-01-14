@@ -1,7 +1,7 @@
 import { ArrowLeftOutlined, ArrowRightOutlined } from '@material-ui/icons';
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
-import women from './women.jpg';
+import { sliderItems } from '../data';
 
 const Container = styled.div `
   width: 100%;
@@ -28,11 +28,13 @@ const Arrow = styled.div `
   margin: auto;
   cursor: pointer;
   opacity: 0.5;
+  z-index: 2;
 `;
 
 const Wrapper = styled.div `
   height: 100%;
   display: flex;
+  transform: translateX(0vw);
 `;
 
 const Slide = styled.div `
@@ -83,44 +85,33 @@ const Button = styled.button `
 
 
 const Slider = () => {
+
+const  [slideIndex, setSlideIndex] = useState('');
+    
+const handleClick = (direction) => {
+
+}
+
     return (
         <Container>
-            <Arrow direction="left">
+            <Arrow direction="left" onClick={() => handleClick("left")}>
                 <ArrowLeftOutlined />
             </Arrow>
             <Wrapper>
-              <Slide bg="black">
+            {sliderItems.map((item) => (
+              <Slide bg="beige">
                <ImgContainer>
-                   <Image src={women} />
+                   <Image src={item.img} />
                </ImgContainer>
                <InfoContainer>
-                   <Title>DEVIL'S SOUL COLLECTION SALE</Title>
-                   <Desc>GET 30% OFF FOR NEW ARRIVAL</Desc>
+                   <Title>{item.title}</Title>
+                   <Desc>{item.desc}</Desc>
                    <Button>Shop Now</Button>
                </InfoContainer>
                </Slide>
-               <Slide bg="yellow">
-               <ImgContainer>
-                   <Image src={women} />
-               </ImgContainer>
-               <InfoContainer>
-                   <Title>DEVIL'S SOUL COLLECTION SALE</Title>
-                   <Desc>GET 30% OFF FOR NEW ARRIVAL</Desc>
-                   <Button>Shop Now</Button>
-               </InfoContainer>
-               </Slide>
-               <Slide bg="pink">
-               <ImgContainer>
-                   <Image src={women} />
-               </ImgContainer>
-               <InfoContainer>
-                   <Title>DEVIL'S SOUL COLLECTION SALE</Title>
-                   <Desc>GET 30% OFF FOR NEW ARRIVAL</Desc>
-                   <Button>Shop Now</Button>
-               </InfoContainer>
-               </Slide>
+            ))}
             </Wrapper>    
-            <Arrow direction="right">
+            <Arrow direction="right" onClick={() => handleClick("right")}>
                 <ArrowRightOutlined />
             </Arrow>
         </Container>
