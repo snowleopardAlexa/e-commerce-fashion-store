@@ -1,12 +1,12 @@
 import { ArrowLeftOutlined, ArrowRightOutlined } from '@material-ui/icons';
 import React from 'react';
 import styled from 'styled-components';
+import women from './women.jpg';
 
 const Container = styled.div `
   width: 100%;
   height: 100vh;
   display: flex;
-  background-color: #900C3F;
   position: relative;
 `;
 
@@ -24,7 +24,60 @@ const Arrow = styled.div `
   left: ${props => props.direction === "left" && "10px"};
   right: ${props => props.direction === "right" && "10px"};
   margin: auto;
+  cursor: pointer;
+  opacity: 0.5;
 `;
+
+const Wrapper = styled.div `
+  height: 100%;
+
+`;
+
+const Slide = styled.div `
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+`;
+
+const ImgContainer = styled.div `
+  flex: 1;
+  height: 100%;
+`;
+
+const Image = styled.div `
+  height: 80%;
+  width: 80%;
+`;
+
+const InfoContainer = styled.div `
+  flex: 1;
+  padding: 50px;
+`;
+
+const Title = styled.h1 `
+  font-size: 2rem;
+`;
+
+const Desc = styled.p `
+  margin: 50px 0px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+`;
+
+const Button = styled.button `
+  padding: 10px;
+  font-size: 2rem;
+  letter-spacing: 5px;
+  background-color: #880808;
+  cursor: pointer;
+  border: transparent;
+  color: white;
+  font-family: 'Shalimar', cursive;
+`;
+
+
 
 const Slider = () => {
     return (
@@ -32,6 +85,18 @@ const Slider = () => {
             <Arrow direction="left">
                 <ArrowLeftOutlined />
             </Arrow>
+            <Wrapper>
+              <Slide>
+               <ImgContainer>
+                   <Image src={women} />
+               </ImgContainer>
+               <InfoContainer>
+                   <Title>DEVIL'S SOUL COLLECTION SALE</Title>
+                   <Desc>GET 30% OFF FOR NEW ARRIVAL</Desc>
+                   <Button>Shop Now</Button>
+               </InfoContainer>
+               </Slide>
+            </Wrapper>    
             <Arrow direction="right">
                 <ArrowRightOutlined />
             </Arrow>
