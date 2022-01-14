@@ -11,13 +11,13 @@ const Container = styled.div `
    font-size: 1.3rem;
    font-family: 'Poppins', sans-serif;
    height: 60px;
-`
+`;
 
 const Highlight = styled.div `
    font-family: 'Shalimar', cursive;
    font-size: 2rem;
    padding: 15px;
-`
+`;
 
 const Annoucement = () => {
     return (

@@ -8,7 +8,7 @@ const Container = styled.div `
   display: flex;
   background-color: #900C3F;
   position: relative;
-`
+`;
 
 const Arrow = styled.div `
   width: 50px;
@@ -23,9 +23,8 @@ const Arrow = styled.div `
   bottom: 0;
   left: ${props => props.direction === "left" && "10px"};
   right: ${props => props.direction === "right" && "10px"};
-  right: 
   margin: auto;
-`
+`;
 
 const Slider = () => {
     return (
