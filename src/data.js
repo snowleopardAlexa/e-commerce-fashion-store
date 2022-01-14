@@ -1,11 +1,11 @@
-import women from './img/women.jpg';
+import woman from './img/woman.jpg';
 import fashion from './img/fashion.jpg';
 import sea from './img/sea.jpg';
 
 export const sliderItems = [
     {
       id: 1,
-      img: {women},
+      img: {woman},
       title: "DEVIL'S SOUL COLLECTION SALE",
       desc: "GET 30% OFF FOR NEW ARRIVAL",
       bg: "f5fafd",
@@ -13,7 +13,7 @@ export const sliderItems = [
     {
       id: 2,
       img: {fashion},
-      title: "AUTUMN COLLECTION",
+      title: "AUTUMN COLLE$CTION",
       desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
       bg: "fcf1ed",
     },
