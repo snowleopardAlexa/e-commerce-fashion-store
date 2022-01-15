@@ -70,7 +70,7 @@ const Navbar = () => {
                    </SearchContainer>
                </Left>
                <Center>
-                   <Logo>Cruella DeVille</Logo>
+                   <Logo>Cruella DeVil</Logo>
                </Center>
                <Right>
                    <MenuItem>Register</MenuItem>
