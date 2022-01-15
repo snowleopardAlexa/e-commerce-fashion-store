@@ -42,13 +42,13 @@ const Center = styled.div `
 
 const Logo = styled.h1 `
    font-weight: bold;
+   align-items: right;
    font-family: 'Shalimar', cursive;
 `
 
 const Right = styled.div `
    flex: 1;
    display: flex;
-   align-items: center;
    justify-content: flex-end;
 `
 
@@ -65,8 +65,8 @@ const Navbar = () => {
                <Left>
                    <Language>EN</Language>
                    <SearchContainer>
-                       <Search />
-                       <Input />
+                       <Input placeholder="Search" />
+                       <Search style={{color: 'grey', fontSize: '1.2rem'}} />
                    </SearchContainer>
                </Left>
                <Center>
