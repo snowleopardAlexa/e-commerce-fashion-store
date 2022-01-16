@@ -81,8 +81,6 @@ const Button = styled.button `
   font-family: 'Shalimar', cursive;
 `;
 
-
-
 const Slider = () => {
 
 const  [slideIndex, setSlideIndex] = useState('');

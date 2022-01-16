@@ -22,13 +22,14 @@ const Info = styled.div `
   height: 100%;
   display: flex; 
   align-items: center;
-  justify-contenr: center;
-  flex-direction: column
+  justify-content: center;
+  flex-direction: column;
 `;
 
 const Title = styled.h1 `
-  color: white;
+  color: #f01c1c;
   margin-bottom: 20px;
+  font-weight: 700;
 `;
 
 const Button = styled.button `
