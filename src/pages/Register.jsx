@@ -1,14 +1,57 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const Container = styled.div`
+  width: 100vw;
+  height: 100vh;
+  background: #ee9ca7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
 
-const Container = styled.div `
+const Wrapper = styled.div`
+  width: 40%;
+  padding: 20px;
+  background-color: white;
+`;
 
+const Title = styled.h1`
+  font-size: 24px;
+  font-weight: 300;
+`;
+
+const Form = styled.form`
+  display: flex;
+  flex-wrap: wrap;
+`;
+
+const Input = styled.input`
+  flex: 1;
+  min-width: 40%;
+  margin: 20px 10px 0px 0px;
+  padding: 10px;
+`;
+
+const Agreement = styled.span`
+  font-size: 12px;
+  margin: 20px 0px;
+`;
+
+const Button = styled.button`
+  width: 40%;
+  border: none;
+  padding: 15px 20px;
+  background-color: #880808;
+  color: white;
+  cursor: pointer;
 `;
 
 const Register = () => {
     return (
-        <Container>
+    <Container>
         <Wrapper>
         <Title>CREATE AN ACCOUNT</Title>
         <Form>
@@ -25,7 +68,7 @@ const Register = () => {
           <Button>CREATE</Button>
         </Form>
       </Wrapper>
-        </Container>
+    </Container>
     )
 }
 
