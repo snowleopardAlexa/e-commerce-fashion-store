@@ -1,10 +1,11 @@
 import React from 'react';
 import { Add, Remove } from "@material-ui/icons";
 import styled from "styled-components";
-import Announcement from "../components/Announcement";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Newsletter from "../components/Newsletter";
+import Announcement from '../components/Annoucement';
+import dress1 from '../img/dress1.jpg';
 
 
 const Container = styled.div``;
@@ -113,14 +114,14 @@ const Button = styled.button`
 const Product = () => {
     return (
      <Container>
-      <Navbar />
       <Announcement />
+      <Navbar />
       <Wrapper>
         <ImgContainer>
-          <Image src="" />
+          <Image src={dress1} />
         </ImgContainer>
         <InfoContainer>
-          <Title>Denim Jumpsuit</Title>
+          <Title>Satin Open Arms Dress</Title>
           <Desc>
             Satin Golden Dress
           </Desc>
@@ -128,7 +129,7 @@ const Product = () => {
           <FilterContainer>
             <Filter>
               <FilterTitle>Color</FilterTitle>
-              <FilterColor color="black" />
+              <FilterColor color="pink" />
               <FilterColor color="darkblue" />
               <FilterColor color="gray" />
             </Filter>
