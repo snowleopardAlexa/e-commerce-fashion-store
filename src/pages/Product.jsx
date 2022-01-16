@@ -93,7 +93,7 @@ const Amount = styled.span`
   width: 30px;
   height: 30px;
   border-radius: 10px;
-  border: 1px solid teal;
+  border: 1px solid #880808;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -102,10 +102,11 @@ const Amount = styled.span`
 
 const Button = styled.button`
   padding: 15px;
-  border: 1px solid black;
   background-color: #880808;
+  border: none;
   cursor: pointer;
   font-weight: 500;
+  color: white;
   &:hover{
       background-color: #960018;
   }
