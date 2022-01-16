@@ -33,7 +33,8 @@ const SocialIcon = styled.div `
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #${(props) => props.color};
+  background-color: ${(props) => props.color};
+  color: white;
   display: flex;
   justify-content: center;
   margin-right: 20px;
@@ -91,16 +92,16 @@ const Footer = () => {
               <Desc>Cruella DeVil is a woman full of passion and power! Be like her!</Desc>
               <SocialContainer>
                   <SocialIcon color="#3b5998">
-                      <Facebook />
+                      <Facebook style={{marginTop: '8px'}} />
                   </SocialIcon>
                   <SocialIcon color="#c32aa3">
-                      <Instagram />
+                      <Instagram style={{marginTop: '8px'}} />
                   </SocialIcon>
                   <SocialIcon color="#1da1f2">
-                      <Twitter />
+                      <Twitter style={{marginTop: '8px'}} />
                   </SocialIcon>
                   <SocialIcon color="#bd081c">
-                      <Pinterest />
+                      <Pinterest style={{marginTop: '8px'}} />
                   </SocialIcon>
               </SocialContainer>
           </Left>
