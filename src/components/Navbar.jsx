@@ -55,7 +55,8 @@ const Right = styled.div `
 `;
 
 const MenuItem = styled.div `
-   font-size: 14px;
+   font-size: 1rem;
+   margin-top: 7px;
    cursor: pointer;
    margin-left: 25px;
 `

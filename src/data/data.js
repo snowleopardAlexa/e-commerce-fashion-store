@@ -19,21 +19,21 @@ export const sliderItems = [
       img: slider1,
       title: "DEVIL'S SOUL COLLECTION SALE",
       desc: "GET 30% OFF FOR NEW ARRIVAL",
-      bg: "#9c4545;",
+      bg: "#A30000",
     },
     {
       id: 2,
       img: slider2,
       title: "AUTUMN COLLECTION",
       desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
-      bg: "#862626",
+      bg: "#9B111E",
     },
     {
       id: 3,
       img: slider3,
       title: "LOUNGEWEAR LOVE",
       desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
-      bg: "#5f1616",
+      bg: "#960018",
     },
   ];
 

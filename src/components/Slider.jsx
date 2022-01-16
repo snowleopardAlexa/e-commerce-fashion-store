@@ -8,14 +8,15 @@ const Container = styled.div `
   height: 100vh;
   display: flex;
   position: relative;
-  position: relative;
   overflow: hidden;
+  color: #ffffff;
 `;
 
 const Arrow = styled.div `
   width: 50px;
   height: 50px;
   background-color: #fff7f7;
+  color: black;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -42,7 +43,7 @@ const Slide = styled.div `
   height: 100vh;
   display: flex;
   align-items: center;
-  background-color: ${props => props.bg};
+  background-color: ${(props) => props.bg};
 `;
 
 const ImgContainer = styled.div `
@@ -51,7 +52,7 @@ const ImgContainer = styled.div `
 `;
 
 const Image = styled.img `
-  height: 80%;
+  height: 100%;
 `;
 
 const InfoContainer = styled.div `
