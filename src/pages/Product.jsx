@@ -102,12 +102,12 @@ const Amount = styled.span`
 
 const Button = styled.button`
   padding: 15px;
-  border: 2px solid teal;
-  background-color: white;
+  border: 1px solid black;
+  background-color: #880808;
   cursor: pointer;
   font-weight: 500;
   &:hover{
-      background-color: #f8f4f4;
+      background-color: #960018;
   }
 `;
 
