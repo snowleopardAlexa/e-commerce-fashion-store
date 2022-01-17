@@ -6,7 +6,7 @@ import { mobile } from '../responsive';
 
 const Container = styled.div `
    height: 60px;
-   ${mobile({height: '50px'})}
+   ${mobile({ height: "50px" })}
 `;
 
 const Wrapper = styled.div `
@@ -34,12 +34,13 @@ const SearchContainer = styled.div `
    align-items: center;
    margin-left: 25px;
    padding: 5px;
+   ${mobile({height: '20px'})}
 `;
 
 const Input = styled.input `
    flex: 1;
    border: none;
-   ${mobile({width: '50px'})}
+   ${mobile({width: '50px', fontSize: '12px'})}
 `;
 
 const Center = styled.div `
@@ -49,9 +50,8 @@ const Center = styled.div `
 
 const Logo = styled.h1 `
    font-weight: bold;
-   align-items: right;
    font-family: 'Shalimar', cursive;
-   ${mobile({fontSize: '24px'})}
+   ${mobile({fontSize: '20px', marginLeft: '17px', marginTop: '3px'})}
 `
 
 const Right = styled.div `

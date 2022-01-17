@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { mobile } from '../responsive';
 
 const Container = styled.div `
   flex: 1;
@@ -30,6 +31,7 @@ const Title = styled.h1 `
   color: #f01c1c;
   margin-bottom: 20px;
   font-weight: 700;
+  ${mobile({fontSize: '1.5rem'})}
 `;
 
 const Button = styled.button `
@@ -42,6 +44,7 @@ const Button = styled.button `
   border: transparent;
   color: white;
   font-family: 'Shalimar', cursive;
+  ${mobile({fontSize: '1.2rem', letterSpacing: '3px'})}
 `;
 
 const CategoryItem = ({ item }) => {
