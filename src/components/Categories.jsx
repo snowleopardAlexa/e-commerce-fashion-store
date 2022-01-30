@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import CategoryItem from './CategoryItem';
-import { categoriesItems } from '../data/data';
+import { categoriesItems } from '../data';
 import { mobile } from '../responsive';
 
 const Container = styled.div `
