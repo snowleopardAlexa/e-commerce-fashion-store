@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { mobile } from '../responsive';
+import { mediaQueries } from '../responsive';
 
 const Container = styled.div`
   width: 100vw;
@@ -17,7 +17,9 @@ const Wrapper = styled.div`
   width: 40%;
   padding: 20px;
   background-color: white;
-  ${mobile({width: '90%'})}
+  ${mediaQueries("md")`
+      width: 90%;
+   `}
 `;
 
 const Title = styled.h1`
@@ -35,7 +37,9 @@ const Input = styled.input`
   min-width: 40%;
   margin: 20px 10px 0px 0px;
   padding: 10px;
-  ${mobile({minWidth: '80%'})}
+  ${mediaQueries("md")`
+      min-width: 80%;
+   `}
 `;
 
 const Agreement = styled.span`
