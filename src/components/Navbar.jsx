@@ -51,7 +51,7 @@ const Input = styled.input `
    border: none;
    ${mediaQueries("md")`
    width: 100px;
-`}
+  `}
 `;
 
 const Center = styled.div `
