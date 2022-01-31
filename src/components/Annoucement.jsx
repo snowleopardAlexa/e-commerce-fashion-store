@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { mobile } from '../responsive';
+import { mediaQueries } from '../responsive';
 
 const Container = styled.div `
    height: 30px;
@@ -12,13 +12,18 @@ const Container = styled.div `
    font-size: 1.3rem;
    font-family: 'Poppins', sans-serif;
    height: 60px;
-   ${mobile({display: 'none'})}
+   ${mediaQueries("md")`
+      font-size: 14px
+   `}
 `;
 
 const Highlight = styled.div `
    font-family: 'Shalimar', cursive;
    font-size: 2rem;
    padding: 15px;
+   ${mediaQueries("md")`
+      font-size: 16px
+   `}
 `;
 
 const Annoucement = () => {

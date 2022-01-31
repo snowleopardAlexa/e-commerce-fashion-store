@@ -5,11 +5,11 @@ import visa from '../img/visa.png';
 import maestro from '../img/maestro.png';
 import paypal from '../img/paypal.png';
 import americanexpress from '../img/american-express.png';
-import { mobile } from '../responsive';
+//import { mobile } from '.././responsive';
 
 const Container = styled.div `
   display: flex;
-  ${mobile({flexDirection: 'column'})}
+ 
 `;
 
 const Left = styled.div `
@@ -19,9 +19,7 @@ const Left = styled.div `
   padding: 20px;
 `;
 
-const Logo = styled.h1 `
-  
-`;
+const Logo = styled.h1 ``;
 
 const Desc = styled.p `
   margin 20px 0px;
@@ -45,7 +43,7 @@ const SocialIcon = styled.div `
 const Center = styled.div `
   flex: 1;
   padding: 20px;
-  ${mobile({display: 'none'})}
+ 
 `;
 
 const Title = styled.h3 `
@@ -68,7 +66,7 @@ const ListItem = styled.li `
 const Right = styled.div `
   flex: 1;
   padding: 20px;
-  ${mobile({backgroundColor: '#e5e5e5'})}
+  
 `;
 
 const ContactItem = styled.div `
