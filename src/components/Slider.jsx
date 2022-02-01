@@ -44,7 +44,7 @@ const Slide = styled.div`
   height: 100vh;
   display: flex;
   align-items: center;
-  background-color: ${(props) => props.bg};
+  background-color: #${(props) => props.bg};
 `;
 
 const ImgContainer = styled.div`
@@ -53,7 +53,7 @@ const ImgContainer = styled.div`
 `;
 
 const Image = styled.img`
-  height: 100%;
+  height: 80%;
 `;
 
 const InfoContainer = styled.div`
@@ -63,7 +63,6 @@ const InfoContainer = styled.div`
 
 const Title = styled.h1`
   font-size: 70px;
-  color: #FBFBF9;
 `;
 
 const Desc = styled.p`
@@ -71,19 +70,13 @@ const Desc = styled.p`
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 3px;
-  color: #FBFBF9;
 `;
 
 const Button = styled.button`
   padding: 10px;
-  font-size: 2rem;
-  letter-spacing: 5px;
-  background-color: #141414;
-  color: #fff;
+  font-size: 20px;
+  background-color: transparent;
   cursor: pointer;
-  border: transparent;
-  color: white;
-  font-family: 'Shalimar', cursive;
 `;
 
 const Slider = () => {
