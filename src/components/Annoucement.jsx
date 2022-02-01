@@ -13,7 +13,7 @@ const Container = styled.div `
    font-family: 'Poppins', sans-serif;
    height: 60px;
    ${mediaQueries("md")`
-      font-size: 14px
+      font-size: 14px;
    `}
 `;
 
