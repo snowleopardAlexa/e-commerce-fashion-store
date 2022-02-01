@@ -1,9 +1,9 @@
-import { css } from 'styled-components';
+export const breakpoints = {
+  sm: 411,
+  md: 768,
+  lr: 1366,
+}
 
-export const mobile = (props) => {
-   return css `
-   @media only screen and (max-width: 380px) {
-    ${props}
-  }
- `;
-};
+export const mediaQueries = (key) => {
+  return (style) => `@media (max-width: ${breakpoints[key]}px) { ${style} }`;
+}

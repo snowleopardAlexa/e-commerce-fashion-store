@@ -5,13 +5,15 @@ import Navbar from '../components/Navbar';
 import Products from "../components/Products";
 import Newsletter from "../components/Newsletter";
 import Footer from "../components/Footer";
-import { mobile } from '../responsive';
+import { mediaQueries } from '../responsive';
 
 const Container = styled.div``;
 
 const Title = styled.h1`
   margin: 20px;
-  ${mobile({fontSize: '1.5rem'})}
+  ${mediaQueries("md")`
+      font-size: 1.5rem;
+   `}
 `;
 
 const FilterContainer = styled.div`
@@ -21,34 +23,43 @@ const FilterContainer = styled.div`
 
 const Filter = styled.div`
   margin: 20px;
-  ${mobile({width: '0px 20px', display: 'flex', flexDirection: 'column'})}
+  ${mediaQueries("md")`
+      width: 0px 20px;
+      display: flex;
+      flex-direction: column;
+   `}
 `;
 
 const FilterText = styled.span`
   font-size: 20px;
   font-weight: 600;
   margin-right: 20px;
-  ${mobile({marginRight: '0px', fontSize: '1rem'})}
+  ${mediaQueries("md")`
+      margin-right: 0px;
+      font-size: 1rem;
+   `}
 `;
 
 const Select = styled.select`
   padding: 10px;
   margin-right: 20px;
-  ${mobile({margin: '10px 0px'})}
+  ${mediaQueries("md")`
+      margin: 10px 0px;
+   `}
 `;
 
 const Option = styled.option`
-  ${mobile({fontSize: '0.8rem'})}
+  ${mediaQueries("md")`
+      font-size: 0.8rem;
+   `}
 `;
-
-
 
 const ProductList = () => {
     return (
         <Container>
            <Navbar />
            <Announcement />
-           <Title>Dresses</Title>
+           <Title>Bags</Title>
            <FilterContainer>
                <Filter>
                  <FilterText>Filter Products:</FilterText>

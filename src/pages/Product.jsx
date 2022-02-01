@@ -6,7 +6,7 @@ import Navbar from "../components/Navbar";
 import Newsletter from "../components/Newsletter";
 import Announcement from '../components/Annoucement';
 import dress1 from '../img/dress1.jpg';
-import { mobile } from '../responsive';
+import { mediaQueries } from '../responsive';
 
 
 const Container = styled.div``;
@@ -14,7 +14,10 @@ const Container = styled.div``;
 const Wrapper = styled.div`
   padding: 50px;
   display: flex;
-  ${mobile({flexDirection: 'column', padding: '10px'})}
+  ${mediaQueries("md")`
+      flex-direction: column;
+      padding: 10px;
+   `}
 `;
 
 const ImgContainer = styled.div`
@@ -25,13 +28,17 @@ const Image = styled.img`
   width: 100%;
   height: 90vh;
   object-fit: cover;
-  ${mobile({height: '40%'})}
+  ${mediaQueries("md")`
+      height: 40%;
+   `}
 `;
 
 const InfoContainer = styled.div`
   flex: 1;
   padding: 0px 50px;
-  ${mobile({padding: '10px'})}
+  ${mediaQueries("md")`
+      padding: 10px;
+   `}
 `;
 
 const Title = styled.h1`
@@ -52,7 +59,9 @@ const FilterContainer = styled.div`
   margin: 30px 0px;
   display: flex;
   justify-content: space-between;
-  ${mobile({width: '100%'})}
+  ${mediaQueries("md")`
+      width: 100%;
+   `}
 `;
 
 const Filter = styled.div`
@@ -86,7 +95,9 @@ const AddContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  ${mobile({width: '100%'})}
+  ${mediaQueries("md")`
+      width: 100%;
+   `}
 `;
 
 const AmountContainer = styled.div`
