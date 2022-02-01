@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import { mobile } from '../responsive';
+import { mediaQueries } from '../responsive';
 
 const Container = styled.div `
   flex: 1;
   margin: 3px;
   height: 70vh;
-  position: relative
+  position: relative;
 `;
 
 const Image = styled.img `
@@ -31,7 +31,10 @@ const Title = styled.h1 `
   color: #f01c1c;
   margin-bottom: 20px;
   font-weight: 700;
-  ${mobile({fontSize: '1.5rem'})}
+  ${mediaQueries("md")`
+      text-align: center;
+      font-size: 24px;
+   `}
 `;
 
 const Button = styled.button `
@@ -44,7 +47,6 @@ const Button = styled.button `
   border: transparent;
   color: white;
   font-family: 'Shalimar', cursive;
-  ${mobile({fontSize: '1.2rem', letterSpacing: '3px'})}
 `;
 
 const CategoryItem = ({ item }) => {

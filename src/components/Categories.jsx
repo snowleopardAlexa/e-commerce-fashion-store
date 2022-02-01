@@ -2,13 +2,16 @@ import React from 'react';
 import styled from 'styled-components';
 import CategoryItem from './CategoryItem';
 import { categoriesItems } from '../data';
-import { mobile } from '../responsive';
+import { mediaQueries } from '../responsive';
 
 const Container = styled.div `
   display: flex;
   padding: 20px;
   justify-content: space-between;
-  ${mobile({padding: '0px', flexDirection: 'column'})}
+  ${mediaQueries("md")`
+    padding: 0px;
+    flex-direction: column;
+`}
 `;
 
 const Categories = () => {

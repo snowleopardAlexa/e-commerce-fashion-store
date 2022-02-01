@@ -5,11 +5,13 @@ import visa from '../img/visa.png';
 import maestro from '../img/maestro.png';
 import paypal from '../img/paypal.png';
 import americanexpress from '../img/american-express.png';
-import { mobile } from '../responsive';
+import { mediaQueries } from '.././responsive';
 
 const Container = styled.div `
   display: flex;
-  ${mobile({flexDirection: 'column'})}
+  ${mediaQueries("md")`
+      flex-direction: column;
+   `}
 `;
 
 const Left = styled.div `
@@ -20,7 +22,9 @@ const Left = styled.div `
 `;
 
 const Logo = styled.h1 `
-  
+ ${mediaQueries("md")`
+   font-size: 1.5rem;
+`}
 `;
 
 const Desc = styled.p `
@@ -45,7 +49,6 @@ const SocialIcon = styled.div `
 const Center = styled.div `
   flex: 1;
   padding: 20px;
-  ${mobile({display: 'none'})}
 `;
 
 const Title = styled.h3 `
@@ -68,7 +71,6 @@ const ListItem = styled.li `
 const Right = styled.div `
   flex: 1;
   padding: 20px;
-  ${mobile({backgroundColor: '#e5e5e5'})}
 `;
 
 const ContactItem = styled.div `
@@ -85,6 +87,10 @@ const PaymentIcon = styled.img `
   width: 40px;
   height: 40px;
   margin-left: 10px;
+  ${mediaQueries("md")`
+      width: 30px;
+      height: 30px;
+   `}
 `;
 
 
