@@ -11,9 +11,6 @@ const Container = styled.div`
   display: flex;
   position: relative;
   overflow: hidden;
-  ${mediaQueries("md")`
-      display: none;
-   `}
 `;
 
 const Arrow = styled.div`
@@ -56,12 +53,26 @@ const ImgContainer = styled.div`
 `;
 
 const Image = styled.img`
-  height: 80%;
+  height: 100%;
+  ${mediaQueries("md")`
+      width: 100%;
+   `}
+   ${mediaQueries("lr")`
+      width: 100%;
+   `}
 `;
+
 
 const InfoContainer = styled.div`
   flex: 1;
   padding: 50px;
+  ${mediaQueries("sm")`
+      display: none;
+   `}
+
+  ${mediaQueries("lr")`
+      display: none;
+  `}
 `;
 
 const Title = styled.h1`

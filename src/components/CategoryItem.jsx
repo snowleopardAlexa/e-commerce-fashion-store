@@ -31,9 +31,9 @@ const Title = styled.h1 `
   color: #f01c1c;
   margin-bottom: 20px;
   font-weight: 700;
-  ${mediaQueries("md")`
+  ${mediaQueries("sm")`
       text-align: center;
-      font-size: 24px;
+      font-size: 20px;
    `}
 `;
 

@@ -12,6 +12,10 @@ const Container = styled.div `
     padding: 0px;
     flex-direction: column;
 `}
+${mediaQueries("lr")`
+    padding: 0px;
+    flex-direction: column;
+`}
 `;
 
 const Categories = () => {
