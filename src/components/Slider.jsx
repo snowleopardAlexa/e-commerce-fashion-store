@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { sliderItems } from "../data";
 import { mediaQueries } from '../responsive';
 
+
 const Container = styled.div`
   width: 100%;
   height: 100vh;
