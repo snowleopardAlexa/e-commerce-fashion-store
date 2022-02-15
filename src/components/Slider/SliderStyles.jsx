@@ -40,7 +40,7 @@ export const Slide = styled.div`
   height: 100vh;
   display: flex;
   align-items: center;
-  background-color: #${(props) => props.bg};
+  background-color: #880808;
 `;
 
 export const ImgContainer = styled.div`
@@ -71,7 +71,8 @@ export const InfoContainer = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-size: 70px;
+  font-size: 4rem;
+  color: #eef2f3;
 `;
 
 export const Desc = styled.p`
@@ -79,12 +80,15 @@ export const Desc = styled.p`
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 3px;
+  color: #eef2f3;
 `;
 
 export const Button = styled.button`
-  padding: 10px;
+  padding: 20px;
   font-size: 20px;
-  background-color: transparent;
+  background-color: #000000;
   cursor: pointer;
+  border: none;
+  color: #eef2f3;
 `;
 

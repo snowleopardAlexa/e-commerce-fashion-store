@@ -6,6 +6,8 @@ import Categories from '../components/Categories';
 import Products from '../components/Products';
 import Newsletter from '../components/Newsletter';
 import Footer from '../components/Footer';
+import Content from '../components/Content/Content';
+import { heroOne, heroTwo, heroThree } from '../data/ContentData';
 
 const Home = () => {
     return (
@@ -13,8 +15,11 @@ const Home = () => {
             <Annoucement />
             <Navbar />
             <Slider />
+            <Content {...heroOne} />
             <Categories />
+            <Content {...heroThree} />
             <Products />
+            <Content {...heroTwo} />
             <Newsletter />
             <Footer />
         </div>

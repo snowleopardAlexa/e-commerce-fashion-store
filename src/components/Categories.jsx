@@ -18,13 +18,21 @@ ${mediaQueries("lr")`
 `}
 `;
 
+const CategoriesTitle = styled.h1 `
+    font-size: 5rem;
+    text-align: center;
+`;
+
 const Categories = () => {
   return (
+    <>
+    <CategoriesTitle>Categories</CategoriesTitle>
     <Container>
       {categoriesItems.map((item) => (
         <CategoryItem item={item} key={item.id} />
       ))}
     </Container>
+    </>
   );
 };
 

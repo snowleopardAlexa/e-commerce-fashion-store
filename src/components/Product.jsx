@@ -21,7 +21,7 @@ const Info = styled.div `
 const Container = styled.div `
   flex: 1;
   margin: 5px;
-  min-width: 280px;
+  min-width: 400px;
   height: 250px;
   display: flex;
   align-items: center;
@@ -62,6 +62,7 @@ const Icon = styled.div `
   }
 `;
 
+
 const Product = ({ item }) => {
     return (
         <Container>
@@ -79,7 +80,7 @@ const Product = ({ item }) => {
                 </Icon>
             </Info>
         </Container>
-    )
+   );
 }
 
 export default Product;
