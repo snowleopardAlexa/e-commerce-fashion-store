@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { mediaQueries } from '../responsive';
+import Footer from "../components/Footer/Footer";
+import Navbar from "../components/Navbar/Navbar";
+import { mediaQueries } from './responsive';
 
 const Container = styled.div`
   width: 100vw;
@@ -58,6 +60,8 @@ const Link = styled.a`
 
 const Login = () => {
     return (
+    <>
+    <Navbar />
     <Container>
       <Wrapper>
         <Title>SIGN IN</Title>
@@ -70,6 +74,8 @@ const Login = () => {
         </Form>
       </Wrapper>
         </Container>
+        <Footer />
+        </>
     )
 }
 

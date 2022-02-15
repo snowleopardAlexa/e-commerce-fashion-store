@@ -1,7 +1,7 @@
 import { ArrowLeftOutlined, ArrowRightOutlined } from "@material-ui/icons";
 import { useState } from "react";
 import { sliderItems } from "../../././data/SliderData";
-import { Container, Wrapper, ImgContainer, InfoContainer, Arrow, Slide, Image, Title, Desc, Button } from "./SliderStyles";
+import { Container, Wrapper, ImgContainer, InfoContainer, Arrow, Slide, Image, Title, SubTitle, Desc, Button } from "./SliderStyles";
 
 
 const Slider = () => {
@@ -27,6 +27,7 @@ const Slider = () => {
             </ImgContainer>
             <InfoContainer>
               <Title>{item.title}</Title>
+              <SubTitle>{item.subtitle}</SubTitle>
               <Desc>{item.desc}</Desc>
               <Button>Shop Now</Button>
             </InfoContainer>

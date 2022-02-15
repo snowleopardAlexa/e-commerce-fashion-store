@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import Announcement from '../components/Annoucement';
-import Navbar from '../components/Navbar';
-import Products from "../components/Products";
-import Newsletter from "../components/Newsletter";
-import Footer from "../components/Footer";
-import { mediaQueries } from '../responsive';
+import Announcement from '../components/Annoucement/Annoucement';
+import Navbar from '../components/Navbar/Navbar';
+import Products from "../components/Products/Products";
+import Newsletter from "../components/Newsletter/Newsletter";
+import Footer from "../components/Footer/Footer";
+import { mediaQueries } from './responsive';
 
 const Container = styled.div``;
 
@@ -59,7 +59,7 @@ const ProductList = () => {
         <Container>
            <Navbar />
            <Announcement />
-           <Title>Bags</Title>
+           <Title>Products Categories</Title>
            <FilterContainer>
                <Filter>
                  <FilterText>Filter Products:</FilterText>

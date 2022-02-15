@@ -1,6 +1,6 @@
-import category1 from './img/category1.jpg';
-import category2 from './img/category2.jpg';
-import category3 from './img/category3.jpg';
+import category1 from '../img/category1.jpg';
+import category2 from '../img/category2.jpg';
+import category3 from '../img/category3.jpg';
 
 export const categoriesItems = [
     {

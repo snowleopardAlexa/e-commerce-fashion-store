@@ -24,13 +24,14 @@ export const Content = ({
 	buttonLabel, 
 	img, 
 	inverse,
-    big }) => {
+    big,
+    reverse, }) => {
 	return (
-		<Section >
+		<Section inverse={inverse}>
 			<Container
 			  inverse={inverse}
 			>
-				<ContentRow >
+				<ContentRow reverse={reverse}>
 					<ContentColumn>
 						<TextWrapper>
 							<TopLine>

@@ -1,13 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 import CategoryItem from './CategoryItem';
-import { categoriesItems } from '../data';
+import { categoriesItems } from "../../././data/CategoriesData";
 import { mediaQueries } from '../responsive';
 
 const Container = styled.div `
   display: flex;
   padding: 20px;
   justify-content: space-between;
+
+  
   ${mediaQueries("md")`
     padding: 0px;
     flex-direction: column;
@@ -23,7 +25,9 @@ const CategoriesTitle = styled.h1 `
     text-align: center;
 `;
 
-const Categories = () => {
+
+
+const Categories = ({ img }) => {
   return (
     <>
     <CategoriesTitle>Categories</CategoriesTitle>
@@ -32,6 +36,7 @@ const Categories = () => {
         <CategoryItem item={item} key={item.id} />
       ))}
     </Container>
+    
     </>
   );
 };

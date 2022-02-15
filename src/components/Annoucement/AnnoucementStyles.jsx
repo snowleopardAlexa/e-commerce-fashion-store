@@ -1,8 +1,7 @@
-import React from 'react';
 import styled from 'styled-components';
 import { mediaQueries } from '../responsive';
 
-const Container = styled.div `
+export const Container = styled.div `
    height: 30px;
    background-color: #880808;
    color: white;
@@ -17,7 +16,7 @@ const Container = styled.div `
    `}
 `;
 
-const Highlight = styled.div `
+export const Highlight = styled.div `
    font-family: 'Shalimar', cursive;
    font-size: 2rem;
    padding: 15px;
@@ -25,15 +24,3 @@ const Highlight = styled.div `
       font-size: 16px
    `}
 `;
-
-const Annoucement = () => {
-    return (
-        <div>
-            <Container>
-                Perfume from <Highlight>Cruella DeVil!</Highlight> Smell like a <Highlight>devillish woman!</Highlight> 
-            </Container>
-        </div>
-    )
-}
-
-export default Annoucement;

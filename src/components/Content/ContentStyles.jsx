@@ -2,20 +2,23 @@ import styled from "styled-components";
 //import { mediaQueries } from '../../../responsive';
 //import { motion } from 'framer-motion';
 
-export const Section = styled.div `
 
-`;
-
-export const Container = styled.div`
-	width: 100%;
-	max-width: 1300px;
-	margin-right: auto;
-	margin-left: auto;
-	padding: 0 50px;
+export const Section = styled.section`
+    max-width: 2000px;
+	padding: ${({ padding }) => (padding ? padding : '140px 0')};
+	margin: ${({ margin }) => (margin ? margin : '')};
 	background: ${({ inverse }) => (inverse ? '#fff' : '#880808')};
+	color: ${({ inverse }) => (inverse ? '#000' : '#fff')};
+	position: ${({ position }) => (position ? position : '')};
+	width: ${({ width }) => (width ? width : 'auto')};
+	min-width: ${({ minWidth }) => (minWidth ? minWidth : 'auto')};
+	
+	height: ${({ height }) => (height ? height : 'auto')};
+	max-height: ${({ maxHeight }) => (maxHeight ? maxHeight : 'auto')};
+	min-height: ${({ minHeight }) => (minHeight ? minHeight : 'auto')};
 
-	@media screen and (max-width: 960px) {
-		padding: 0 30px;
+	@media screen and (max-width: 768px) {
+		padding: ${({ smPadding }) => (smPadding ? smPadding : '70px 0')};
 	}
 `;
 
@@ -84,7 +87,7 @@ export const TopLine = styled.div`
 	font-weight: 550;
 	letter-spacing: 1.4px;
 	margin-bottom: 1.3rem;
-	color: ${({ inverse }) => (inverse ? '#fff' : '#dc281e')};
+
 `;
 
 export const Img = styled.img`
@@ -108,6 +111,19 @@ export const Heading = styled.h2`
 
 	@media screen and (max-width: 768px) {
 		text-align: center;
+	}
+`;
+
+export const Container = styled.div`
+	width: 100%;
+	max-width: 1300px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0 50px;
+	background: ${({ inverse }) => (inverse ? '#880808' : '#fff')};
+
+	@media screen and (max-width: 960px) {
+		padding: 0 30px;
 	}
 `;
 

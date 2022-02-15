@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { mediaQueries } from '../responsive';
+import { mediaQueries } from './responsive';
 
 const Container = styled.div`
   width: 100vw;

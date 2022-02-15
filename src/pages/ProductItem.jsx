@@ -1,12 +1,12 @@
 import React from 'react';
 import { Add, Remove } from "@material-ui/icons";
 import styled from "styled-components";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
-import Newsletter from "../components/Newsletter";
-import Announcement from '../components/Annoucement';
+import Footer from "../components/Footer/Footer";
+import Navbar from "../components/Navbar/Navbar";
+import Newsletter from "../components/Newsletter/Newsletter";
+import Announcement from '../components/Annoucement/Annoucement';
 import dress1 from '../img/dress1.jpg';
-import { mediaQueries } from '../responsive';
+import { mediaQueries } from './responsive';
 
 
 const Container = styled.div``;

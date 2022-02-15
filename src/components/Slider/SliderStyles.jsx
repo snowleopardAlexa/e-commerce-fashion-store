@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { mediaQueries } from '../../responsive';
+import { mediaQueries } from '../responsive';
 
 export const Container = styled.div`
   width: 100%;
@@ -73,6 +73,12 @@ export const InfoContainer = styled.div`
 export const Title = styled.h1`
   font-size: 4rem;
   color: #eef2f3;
+`;
+
+export const SubTitle = styled.h3`
+  font-size: 1.5rem;
+  color: #eef2f3;
+  font-weight: 300;
 `;
 
 export const Desc = styled.p`
