@@ -1,6 +1,6 @@
 import { ArrowLeftOutlined, ArrowRightOutlined } from "@material-ui/icons";
 import { useState } from "react";
-import { sliderItems } from "../../data";
+import { sliderItems } from "../../././data/SliderData";
 import { Container, Wrapper, ImgContainer, InfoContainer, Arrow, Slide, Image, Title, Desc, Button } from "./SliderStyles";
 
 
