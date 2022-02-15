@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import Footer from "../components/Footer/Footer";
+import Navbar from "../components/Navbar/Navbar";
 import { mediaQueries } from './responsive';
 
 const Container = styled.div`
@@ -58,6 +60,8 @@ const Button = styled.button`
 
 const Register = () => {
     return (
+    <>
+    <Navbar />
     <Container>
         <Wrapper>
         <Title>CREATE AN ACCOUNT</Title>
@@ -76,7 +80,9 @@ const Register = () => {
         </Form>
       </Wrapper>
     </Container>
-    )
+    <Footer />
+    </>
+    );
 }
 
 export default Register;
