@@ -9,8 +9,7 @@ export const Container = styled.div `
 `;
 
 export const BrandSignatureWrapper = styled.div `
-   
-   
+   padding: 10px;
 `;
 
 export const TitleWrapper = styled.div `
@@ -19,6 +18,7 @@ export const TitleWrapper = styled.div `
    text-align: center;
    font-family: 'Shalimar', cursive;
    color: #eef2f3;
+   letter-spacing: 1px;
 `;
 
 export const TextWrapper = styled.div `
@@ -27,4 +27,5 @@ export const TextWrapper = styled.div `
    text-align: center;
    font-family: 'Shalimar', cursive;
    color: #eef2f3;
+   letter-spacing: 1px;
 `;

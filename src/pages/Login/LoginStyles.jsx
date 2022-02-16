@@ -67,4 +67,5 @@ export const BottomText = styled.p `
   margin: -110px auto;
   text-align: center;
   color: #eef2f3;
+  letter-spacing: 1px;
 `;

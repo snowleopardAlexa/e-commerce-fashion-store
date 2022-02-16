@@ -22,6 +22,7 @@ export const Logo = styled.h1`
   font-family: "Shalimar", cursive;
   color: #eef2f3;
   font-size: 4rem;
+  letter-spacing: 1px;
   ${mediaQueries("md")`
    font-size: 1.5rem;
 `}
