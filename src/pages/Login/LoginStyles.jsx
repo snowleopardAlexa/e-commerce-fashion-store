@@ -57,3 +57,14 @@ export const Link = styled.a`
 export const Divider = styled.div `
   padding: 5px;
 `;
+
+export const BottomText = styled.p `
+  font-size: 2.5rem;
+  font-family: 'Shalimar', cursive;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: -110px auto;
+  text-align: center;
+  color: #eef2f3;
+`;

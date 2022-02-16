@@ -5,10 +5,10 @@ const BrandSignature = () => {
     <Container>
         <BrandSignatureWrapper>
             <TitleWrapper>
-               Cruela
+               Cruela DeVil says...
             </TitleWrapper>
             <TextWrapper>
-                Hello 
+                The woman is a monster! 
             </TextWrapper>
         </BrandSignatureWrapper>
     </Container>

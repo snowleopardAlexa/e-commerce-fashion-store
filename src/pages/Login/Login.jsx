@@ -10,6 +10,7 @@ import {
   Button,
   Link,
   Divider,
+  BottomText,
 } from "./LoginStyles";
 
 const Login = () => {
@@ -36,6 +37,7 @@ const Login = () => {
           </Form>
         </Wrapper>
       </Container>
+      <BottomText>Kisses and shivers!</BottomText>
       <Footer />
     </>
   );

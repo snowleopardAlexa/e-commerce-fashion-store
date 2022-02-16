@@ -5,9 +5,7 @@ export const Container = styled.div `
    position: absolute;
    left: 0;
    right: 0;
-   margin: auto
-   border: 1px solid black;
-  
+   margin: 20px auto;
 `;
 
 export const BrandSignatureWrapper = styled.div `
@@ -17,12 +15,16 @@ export const BrandSignatureWrapper = styled.div `
 
 export const TitleWrapper = styled.div `
    color: 'white';
-   font-size: 2rem;
+   font-size: 4rem;
    text-align: center;
+   font-family: 'Shalimar', cursive;
+   color: #eef2f3;
 `;
 
 export const TextWrapper = styled.div `
    color: 'white';
-   font-size: 2rem;
+   font-size: 2.5rem;
    text-align: center;
+   font-family: 'Shalimar', cursive;
+   color: #eef2f3;
 `;
