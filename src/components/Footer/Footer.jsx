@@ -36,7 +36,7 @@ const Footer = () => {
       <Left>
         <Logo>Cruella DeVil</Logo>
         <Desc>
-          Cruella DeVil is a woman full of passion and power! Be like her!
+          Ah Cruella, she ought to be locked up!
         </Desc>
         <SocialContainer>
           <SocialIcon color="#3b5998">
