@@ -1,7 +1,7 @@
 export const breakpoints = {
     sm: 411,
     md: 768,
-    lr: 1366,
+    lg: 1366,
   }
   
   export const mediaQueries = (key) => {

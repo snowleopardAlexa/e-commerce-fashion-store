@@ -18,6 +18,7 @@ const Navbar = () => {
                    <Logo>Cruella DeVil</Logo>
                </Center>
                <Right>
+                   <MenuItem>Home</MenuItem>
                    <MenuItem>Products</MenuItem>
                    <MenuItem>Register</MenuItem>
                    <MenuItem>Login</MenuItem>

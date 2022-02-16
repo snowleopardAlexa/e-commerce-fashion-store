@@ -8,6 +8,10 @@ export const Container = styled.div`
   padding: 100px;
   ${mediaQueries("md")`
       flex-direction: column;
+      padding: 70px;
+  `}
+   ${mediaQueries("lg")`
+      padding: 20px;
    `}
 `;
 
@@ -24,8 +28,11 @@ export const Logo = styled.h1`
   font-size: 4rem;
   letter-spacing: 1px;
   ${mediaQueries("md")`
-   font-size: 1.5rem;
-`}
+   font-size: 2.5rem;
+  `}
+  ${mediaQueries("lg")`
+   font-size: 3rem;
+  `}
 `;
 
 export const Desc = styled.p`
@@ -34,10 +41,19 @@ export const Desc = styled.p`
   font-family: 'Shalimar', cursive;
   font-size: 2.5rem;
   letter-spacing: 2px;
+  ${mediaQueries("md")`
+   font-size: 2rem;
+  `}
+  ${mediaQueries("lg")`
+   font-size: 2rem;
+  `}
 `;
 
 export const SocialContainer = styled.div`
   display: flex;
+  ${mediaQueries("lg")`
+    margin-top: 40px;
+  `}
 `;
 
 export const SocialIcon = styled.div`
@@ -90,6 +106,9 @@ export const ContactItem = styled.div`
 
 export const PaymentContainer = styled.div`
   width: 50%;
+  ${mediaQueries("lg")`
+    display: flex;
+  `}
 `;
 
 export const PaymentIcon = styled.img`
@@ -99,5 +118,11 @@ export const PaymentIcon = styled.img`
   ${mediaQueries("md")`
       width: 30px;
       height: 30px;
+      margin-left: 0px;
+      padding: 2px;
+   `}
+   ${mediaQueries("lg")`
+      padding: 2.5px;
+      margin-left: 0px;
    `}
 `;

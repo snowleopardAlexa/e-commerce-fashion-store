@@ -8,6 +8,12 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  ${mediaQueries("md")`
+    height: 100vh;
+ `}
+  ${mediaQueries("lg")`
+    height: 80vh;
+ `}
 `;
 
 export const Wrapper = styled.div`
@@ -15,7 +21,11 @@ export const Wrapper = styled.div`
   padding: 20px;
   background-color: white;
   ${mediaQueries("md")`
-      width: 85%;
+      width: 60%;
+   `}
+
+   ${mediaQueries("lg")`
+      width: 75%;
    `}
 `;
 

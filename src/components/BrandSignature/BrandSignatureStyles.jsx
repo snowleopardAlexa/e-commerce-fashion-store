@@ -6,6 +6,9 @@ export const Container = styled.div `
    left: 0;
    right: 0;
    margin: 20px auto;
+   ${mediaQueries("lg")`
+      margin: 30px;
+   `}
 `;
 
 export const BrandSignatureWrapper = styled.div `
