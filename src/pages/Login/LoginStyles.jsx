@@ -11,7 +11,7 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.div`
-  width: 1300px;
+  width: 35%;
   padding: 20px;
   background-color: white;
   ${mediaQueries("md")`
@@ -21,7 +21,8 @@ export const Wrapper = styled.div`
 
 export const Title = styled.h1`
   font-size: 3rem;
-  font-weight: 400;
+  font-weight: 600;
+  text-align: center;
 `;
 
 export const Form = styled.form`
@@ -37,7 +38,7 @@ export const Input = styled.input`
 `;
 
 export const Button = styled.button`
-  width: 40%;
+  width: 100%;
   border: none;
   padding: 15px 20px;
   background-color: #880808;
@@ -51,4 +52,8 @@ export const Link = styled.a`
   font-size: 12px;
   text-decoration: underline;
   cursor: pointer;
+`;
+
+export const Divider = styled.div `
+  padding: 5px;
 `;
