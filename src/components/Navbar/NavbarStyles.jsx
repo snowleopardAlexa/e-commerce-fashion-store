@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { mediaQueries } from '../responsive';
 
+
 export const Container = styled.div `
    height: 60px;
    ${mediaQueries("md")`
@@ -79,6 +80,19 @@ export const MenuItem = styled.div `
    margin-top: 7px;
    cursor: pointer;
    margin-left: 25px;
+   ${mediaQueries("md")`
+      font-size: 12px;
+      margin-left: 10px;
+   `}
+`;
+
+export const Link = styled.li `
+      
+      font-size: 3rem;
+      margin-top: 7px;
+      cursor: pointer;
+      margin-left: 25px;
+   
    ${mediaQueries("md")`
       font-size: 12px;
       margin-left: 10px;

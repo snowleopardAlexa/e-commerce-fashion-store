@@ -1,6 +1,7 @@
 import { Badge } from '@material-ui/core';
 import { Search, ShoppingCartOutlined } from '@material-ui/icons';
-import { Container, Wrapper, Logo, Left, Language, SearchContainer, Input, Center, Right, MenuItem } from './NavbarStyles';
+import { Container, Wrapper, Logo, Left, Language, SearchContainer, Input, Center, Right, MenuItem, NavLink } from './NavbarStyles';
+import { Link } from "react-router-dom";
 
 
 const Navbar = () => {
@@ -18,10 +19,10 @@ const Navbar = () => {
                    <Logo>Cruella DeVil</Logo>
                </Center>
                <Right>
-                   <MenuItem>Home</MenuItem>
-                   <MenuItem>Products</MenuItem>
-                   <MenuItem>Register</MenuItem>
-                   <MenuItem>Login</MenuItem>
+                 <MenuItem><Link to="/">Home</Link></MenuItem> 
+                 <MenuItem><Link to="/products">Products</Link></MenuItem> 
+                 <MenuItem><Link to="/register">Register</Link></MenuItem> 
+                 <MenuItem><Link to="/login">Login</Link></MenuItem> 
                    <MenuItem>
                       <Badge badgeContent={4} color="secondary">
                           <ShoppingCartOutlined />
@@ -30,6 +31,7 @@ const Navbar = () => {
                </Right>
            </Wrapper>
         </Container>
+    
     )
 }
 
